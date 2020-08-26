@@ -9,12 +9,6 @@
     "build": "tsc -p . && docker build -t rayfield24/dental_avenue_node .",
     "lint": "eslint --ext ts src/**/*.ts"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn build"
-    }
-  },
   "dependencies": {
     "@types/mongoose": "^5.7.3",
     "bcrypt": "^4.0.1",
@@ -35,7 +29,6 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.20.1",
-    "husky": "^4.2.3",
     "nodemon": "^2.0.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"

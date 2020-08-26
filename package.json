@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint --since master",
+      "pre-push": "yarn build --since master"
+    }
+  }
+}
