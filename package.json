@@ -1,0 +1,19 @@
+{
+  "name": "dental_avenue",
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "pre-commit": "lerna run pre-commit --since master",
+    "pre-push": "lerna run pre-push --since master"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn pre-commit",
+      "pre-push": "yarn pre-push"
+    }
+  }
+}
