@@ -4,7 +4,7 @@ const UserContext = createContext();
 
 export const UserWrapper = ({ children }) => {
   const initialState = {
-    isAuthenticated: false,
+    isAuthenticated: false
   };
 
   const reducer = (state, action) => {
@@ -14,7 +14,8 @@ export const UserWrapper = ({ children }) => {
           ...state,
           isAuthenticated: true,
           name: action.payload.name,
-          id: action.payload.id,
+          token: action.payload.id,
+          role: action.payload.role
         });
       case 'logout':
         return ({

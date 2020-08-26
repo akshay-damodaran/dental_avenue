@@ -23,7 +23,8 @@ function Login({ history }) {
             type: 'login',
             payload: {
               name: 'Akshay',
-              id: 234,
+              token: 'jwt_token',
+              role: 1
             },
           });
           history.push('/');
