@@ -7,13 +7,13 @@
   },
   "scripts": {
     "start": "lerna run start",
-    "pre-commit": "lerna run pre-commit",
-    "pre-push": "lerna run pre-push"
+    "pre-commit": "lerna run pre-commit --since master",
+    "pre-push": "lerna run pre-push --since master"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lerna run pre-commit --since master",
-      "pre-push": "lerna run pre-push --since master"
+      "pre-commit": "yarn pre-commit",
+      "pre-push": "yarn pre-push"
     }
   }
 }
