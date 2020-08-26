@@ -6,13 +6,14 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "pre-commit": "lerna run pre-commit",
+    "pre-push": "lerna run pre-push"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint --since master",
-      "pre-push": "yarn build --since master"
+      "pre-commit": "lerna run pre-commit --since master",
+      "pre-push": "lerna run pre-push --since master"
     }
   }
 }
