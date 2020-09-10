@@ -1,0 +1,10 @@
+{
+    "mongo": {
+      "host": "mongodb+srv://sudarshana:sudri@123@dentalavenue.5aua6.mongodb.net/DentalAvenue?retryWrites=true&w=majority",
+      "port": 27017,
+      "db": "dentalAvenue"
+    },
+    "api": {
+      "port": 3000
+    }
+  }
