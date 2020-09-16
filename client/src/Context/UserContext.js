@@ -4,7 +4,7 @@ const UserContext = createContext();
 
 export const UserWrapper = ({ children }) => {
   const initialState = {
-    isAuthenticated: false
+    isAuthenticated: true // ToDo: To revert back to false when done with Patient component
   };
 
   const reducer = (state, action) => {
