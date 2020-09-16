@@ -10,6 +10,11 @@ const patientSchema: Schema = new Schema({
   dateOfBirth: Date,
   address: String,
   mobileNo: Number,
+  gender: String,
+  pastDentalHistory: String,
+  chiefComplaint: String,
+  provisionalDignosis: String,
+  provisionalTreatmentPlan: String,
   refBy: String,
   occupation: String,
   balance: Number,
@@ -49,6 +54,12 @@ export interface IPatient extends Document {
   mobileNo: number;
   refBy: string;
   balance: number;
+  occupation: String;
+  gender: String,
+  pastDentalHistory: String,
+  chiefComplaint: String,
+  provisionalDignosis: String,
+  provisionalTreatmentPlan: String,
   treatmentLogs: ITreatmentLog[];
 }
 
