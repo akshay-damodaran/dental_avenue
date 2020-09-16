@@ -1,8 +1,11 @@
 import React from 'react';
+import AddPatient from '../Components/Patient/AddPatient';
 
 function Main() {
   return (
-    <p>Patient Page</p>
+    <div>
+      <AddPatient />
+    </div>
   );
 }
 
