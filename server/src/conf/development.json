@@ -1,5 +1,6 @@
 {
   "mongo": {
+    "baseUrl":"mongodb",
     "host": "localhost",
     "port": 27017,
     "db": "dentalAvenue"
