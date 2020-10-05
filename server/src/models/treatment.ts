@@ -6,24 +6,19 @@ const treatmentSchema: Schema = new Schema({
     required: true,
   },
   subtreatment: {
-    type: String,
+    type: Array,
     required: false,
   },
-  type: {
-    type: String,
-    required: false,
-  },
-  price: {
+  cost:{
     type: Number,
-    required: true,
-  },
+    required: false 
+  }
 });
 
 export interface ITreatment extends Document {
   name: string;
-  subtreatment: string;
-  type: string;
-  price: number;
+  subtreatment: Array<ITreatment>;
+  cost: number;
 }
 
 const Treatment: Model<ITreatment> = mongoose.model('Treatment', treatmentSchema);

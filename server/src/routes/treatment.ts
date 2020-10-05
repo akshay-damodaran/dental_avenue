@@ -2,21 +2,46 @@ import { Router, Request, Response } from 'express';
 import Treatment from '../models/treatment';
 
 const treatment: Router = Router();
+const errorData: object = { code: 500 };
 
-treatment.get('/', (req: Request, res: Response) => {
-  Treatment.find()
-    .then((treatments) => res.send(treatments));
+treatment.post('/add', async (req: Request, res: Response) => {
+  let treatmentBody = new Treatment(req.body);
+  try {
+    await treatmentBody.save();
+    res.send({ code: 200, data: 'Saved' });
+  } catch (error) {
+    res.send(errorData);
+  }
 });
 
-treatment.get('/input', (req: Request, res: Response) => {
-  const treatment1 = new Treatment({
-    name: 'qwer',
-    price: 1000,
-  });
+treatment.get('/get', async (req: Request, res: Response) => {
+  try {
+    let treatments = await Treatment.find();
+    res.send({ code: 200, data: treatments });
+  } catch (error) {
+    res.send(errorData);
+  }
+});
 
-  treatment1.save()
-    .then(() => res.send('Saved'))
-    .catch(() => res.send('Error'));
+treatment.post('/update', async (req: Request, res: Response) => {
+  try {
+    const { id } = req.body;
+    delete req.body.id;
+    const dataToBeUpdated = req.body;
+    let treatments = await Treatment.updateOne({ _id: id }, dataToBeUpdated);
+    res.send({ code: 200, data: treatments });
+  } catch (error) {
+    res.send(errorData);
+  }
+});
+
+treatment.post('/delete', async (req: Request, res: Response) => {
+  try {
+    let treatments = await Treatment.deleteOne({ _id: req.body.id });
+    res.send({ code: 200, data: treatments });
+  } catch (error) {
+    res.send(errorData);
+  }
 });
 
 export default treatment;
