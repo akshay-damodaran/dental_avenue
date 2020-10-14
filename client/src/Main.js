@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 
 import Auth from './Auth';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/CommonComponents/Navbar';
 import UserContext from './Context/UserContext';
 
 const PatientList = lazy(() => import('./RoleBasedComponents/Role1').then((module) => ({default: module.PatientList})));

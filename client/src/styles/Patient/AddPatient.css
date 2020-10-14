@@ -1,4 +1,6 @@
 .newPatienForm{
     width: 70%;
     margin: 0 150px 0 150px;
+    background-color: rgb(208, 236, 236);
+    padding: 40px;
 }

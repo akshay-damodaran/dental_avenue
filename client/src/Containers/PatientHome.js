@@ -1,10 +1,10 @@
 import React from 'react';
-import AddPatient from '../Components/Patient/AddPatient';
+import Listpatient from '../Components/Patient/ListPatient';
 
 function Main() {
   return (
     <div>
-      <AddPatient />
+      <Listpatient />
     </div>
   );
 }

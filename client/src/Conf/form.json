@@ -1,0 +1,81 @@
+{
+    "formData": [
+        {
+            "label": "Full Name",
+            "placeholder": "Enter full name",
+            "name": "name",
+            "type": "text"
+        },
+        {
+            "label": "Mobile Number",
+            "placeholder": "Enter mobile number",
+            "name": "mobileNo",
+            "type": "text"
+        },
+        {
+            "label": "Address",
+            "placeholder": "Enter Address",
+            "name": "address",
+            "type": "textarea"
+        },
+        {
+            "label": "Date of birth",
+            "placeholder": "Enter date of birth",
+            "name": "dateOfBirth",
+            "type": "text"
+        },
+        {
+            "label": "Gender",
+            "placeholder": "Enter Ref By",
+            "name": "gender",
+            "type": "select",
+            "options": [
+                "Male",
+                "Female"
+            ]
+        },
+        {
+            "label": "Occupation",
+            "placeholder": "Enter Ref By",
+            "name": "occupation",
+            "type": "select",
+            "options": [
+                "Service",
+                "business",
+                "Student",
+                "Doctor",
+                "House wife"
+            ]
+        },
+        {
+            "label": "Past Dental History",
+            "placeholder": "Enter Past Dental History",
+            "name": "pastDentalHistory",
+            "type": "textarea"
+        },
+        {
+            "label": "Chief Complaint",
+            "placeholder": "Enter Chief Complaint",
+            "name": "chiefComplaint",
+            "type": "textarea"
+        },
+        {
+            "label": "Provisional Dignosis",
+            "placeholder": "Enter Provisional Dignosis",
+            "name": "provisionalDignosis",
+            "type": "textarea"
+        },
+        {
+            "label": "Provisional Treatment Plan",
+            "placeholder": "Enter Provisional Treatment Plan",
+            "name": "provisionalTreatmentPlan",
+            "type": "textarea"
+        },
+        {
+            "label": "Ref By",
+            "placeholder": "Enter Ref By",
+            "name": "refBy",
+            "type": "text"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "baseUrl": "http://localhost:5000/"
+  },
+  "production": {
+    "baseUrl": "https://movies-portal-backend.herokuapp.com/"
+  }
+}
