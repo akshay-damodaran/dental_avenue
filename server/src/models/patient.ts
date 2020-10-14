@@ -7,17 +7,50 @@ const patientSchema: Schema = new Schema({
     type: String,
     required: true,
   },
-  dateOfBirth: Date,
-  address: String,
-  mobileNo: Number,
-  gender: String,
-  pastDentalHistory: String,
-  chiefComplaint: String,
-  provisionalDignosis: String,
-  provisionalTreatmentPlan: String,
-  refBy: String,
-  occupation: String,
-  balance: Number,
+  dateOfBirth: {
+    type: Date,
+    required: true,
+  },
+  address: {
+    type: String,
+    required: true,
+  },
+  mobileNo: {
+    type: Number,
+    required: true,
+  },
+  gender: {
+    type: String,
+    required: true,
+  },
+  pastDentalHistory: {
+    type: String,
+    required: true,
+  },
+  chiefComplaint: {
+    type: String,
+    required: true,
+  },
+  provisionalDignosis: {
+    type: String,
+    required: true,
+  },
+  provisionalTreatmentPlan: {
+    type: String,
+    required: true,
+  },
+  refBy: {
+    type: String,
+    required: false,
+  },
+  occupation: {
+    type: String,
+    required: true,
+  },
+  balance: {
+    type: String,
+    required: true,
+  },
   treatmentLogs: [{
     treatmentId: {
       type: Schema.Types.ObjectId,

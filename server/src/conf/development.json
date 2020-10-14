@@ -6,6 +6,6 @@
     "db": "dentalAvenue"
   },
   "api": {
-    "port": 3000
+    "port": 5000
   }
 }
