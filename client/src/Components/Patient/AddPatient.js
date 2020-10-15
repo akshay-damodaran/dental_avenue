@@ -9,22 +9,21 @@ import Modal from '../CommonComponents/DisplayModal';
 
 const AddPatient = (props) => {
 
-  // const { name, dateOfBirth, address, mobileNo, gender, provisionalTreatmentPlan, refBy,
-  //   pastDentalHistory, chiefComplaint, provisionalDignosis, occupation } = props.data;
-  // let data = props.data;
+  const { name, dateOfBirth, address, mobileNo, gender, provisionalTreatmentPlan, refBy,
+    pastDentalHistory, chiefComplaint, provisionalDignosis, occupation } = props.data;
   
   const [patientData, setPatientData] = useState({
-    "name": props.data.name || '',
-    "dateOfBirth": props.data.dateOfBirth || '',
-    "address": props.data.address || '',
-    "mobileNo": props.data.mobileNo || '',
-    "gender": props.data.gender || '',
-    "pastDentalHistory": props.data.pastDentalHistory || '',
-    "chiefComplaint": props.data.chiefComplaint || '',
-    "provisionalDignosis": props.data.provisionalDignosis || '',
-    "provisionalTreatmentPlan": props.data.provisionalTreatmentPlan || '',
-    "refBy": props.data.refBy || '',
-    "occupation": props.data.occupation || '',
+    "name": name || '',
+    "dateOfBirth": dateOfBirth || '',
+    "address": address || '',
+    "mobileNo": mobileNo || '',
+    "gender": gender || '',
+    "pastDentalHistory": pastDentalHistory || '',
+    "chiefComplaint": chiefComplaint || '',
+    "provisionalDignosis": provisionalDignosis || '',
+    "provisionalTreatmentPlan": provisionalTreatmentPlan || '',
+    "refBy": refBy || '',
+    "occupation": occupation || '',
     "balance": 0
   });
 
